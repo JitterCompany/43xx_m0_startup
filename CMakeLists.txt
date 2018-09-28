@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5.0 FATAL_ERROR)
 
 
-set(CPM_MODULE_NAME 43xx_m0_startup)
+set(CPM_MODULE_NAME startup_lpc43xx_m0)
 
 #-----------------------------------------------------------------------
 # Required CPM Setup - no need to modify - See: https://github.com/iauns/cpm
@@ -42,7 +42,7 @@ file(GLOB SOURCES
     )
 
 set(LINKER_FILE "${CMAKE_CURRENT_LIST_DIR}/${CPM_MODULE_NAME}/\
-43xx_m0.ld")
+lpc43xx_m0.ld")
 set_property(GLOBAL PROPERTY startup_linker "${LINKER_FILE}")
 
 
